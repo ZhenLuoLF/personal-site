@@ -1,5 +1,7 @@
 import Nav from 'react-bootstrap/Nav';
+import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
+import './About.css'
 class About extends React.Component{
     render(){
         return(
@@ -27,6 +29,66 @@ class About extends React.Component{
                   </Nav.Item>
                 </Nav>
             </header>
+            <main>
+            <Carousel fade>
+              <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="images/MainBio.jpg"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="holder.js/800x400?text=Second slide&bg=282c34"
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="holder.js/800x400?text=Third slide&bg=20232a"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+<div className="container marketing">
+
+<div className="row">
+  <div className="col-lg-4">
+    <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+    <h2 className="fw-normal">Heading</h2>
+    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+    <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+  </div>
+  <div className="col-lg-4">
+    <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+
+    <h2 className="fw-normal">Heading</h2>
+    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+    <p><a className="btn btn-secondary" href="#">View details &raquo;</a></p>
+  </div>
+</div>
+</div>
+
+            </main>
           </div>
         );
     };
