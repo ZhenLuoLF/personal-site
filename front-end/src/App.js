@@ -8,7 +8,13 @@ function Head() {
     <div className="container">
     <header className="d-flex justify-content-center py-3 mb-4 border-bottom">
     <a href="/" className="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <svg className="bi me-2" width="40" height="32"><use xlinkHref="#bootstrap"></use></svg>
+    <img
+                className="bi me-2"
+                src="images/MyLogo.png"
+                alt="My Logo"
+                width="40"
+                height="32" 
+               />
         <span className="fs-4">Zhen Luo</span>
       </a>
     <Nav variant='pills' defaultActiveKey="/">
